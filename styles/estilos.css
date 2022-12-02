@@ -1,0 +1,271 @@
+/*En este fichero, definiremos el formato que queremos dar a las diferentes etiquetas HTML5 de nuestros ficheros enlazados.
+Para ahorrarnos algunas líneas de código, crearemos clases e identificadores para utilizarlas en el archivo HTML y aplicar el mismo formato a diferentes elementos
+o para diferenciar etiquetas con el mismo nombre*/
+
+/*Empezamos formateando las principales etiquetas semánticas*/
+
+body{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    border: 3px solid rgb(69, 163, 252);
+    border-radius: 30px;
+    background-color: #e4efff;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    letter-spacing: 10px;
+    
+    /*A lo largo de la hoja de estilos veremos que se recurre al flexbox para la maquetación*/
+    display: flex;
+}
+
+nav{
+    border-bottom: 5px double rgb(69, 163, 252);
+   
+    justify-content: center;
+    align-items: center;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    border: 2px solid rgb(238, 157, 65);
+    border-radius: 10px;
+    margin: 15px 30px;
+    padding: 10px;
+    color: rgb(238, 157, 65);
+    text-decoration: solid;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background: rgb(238, 157, 65);
+    color: #ffffff;
+}
+
+main{
+    padding: 5px; 
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    
+    width: 75%;
+    display: flex;
+}
+
+a {
+    text-decoration: solid;
+    color: #000;
+}
+
+aside{
+    margin-top: 15px;
+    border-radius: 15px;
+    background: rgb(252, 233, 201);
+    width: 20%;
+    max-height: 350px;
+    
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+aside h4{
+    text-decoration: underline;
+    letter-spacing: 5px;
+    font-style: oblique;
+}
+
+aside a, aside p{
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin: 20px 75px;
+    padding: 5px 30px;
+    background-color: #d7e7ff;
+}
+
+
+footer{
+    border: 5px solid gray;    
+    background-color: gray;
+    font-style: oblique;
+    text-align: center;
+    font-size: smaller;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+/*Empezamos a crear clases para diferenciar etiquetas unas de otras*/
+.imagen-index{
+    width: 40% ;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.alinear{
+
+    margin: 15px;
+    padding: 10px;
+    height: 100%;
+    text-align: justify;
+    border: dotted black ;
+    border-width: 0px 3px;
+    align-self: center;
+
+    flex-direction: column;
+}
+
+/*También nos apoyaremos en los identificadores para concretar estilos*/
+#section-categorias{
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    margin: 50px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+#categorias{
+    text-align: center;
+    color: #e4efff;
+    font-size: 25px;
+    border: 3px solid purple;
+    border-radius: 15px;
+    
+    padding: 10px;
+    background-color: rgba(137, 43, 226, 0.384);
+    
+}
+
+article{
+    border: 3px solid salmon;
+    border-radius: 10PX;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    display: flex;  
+    justify-content: space-around;
+    
+} 
+
+.imagen{
+    width: 300px;
+    padding-right: 15px;
+}
+
+#lista-articulos{
+    flex-direction: column;
+    text-align: center;
+    margin: 15px;
+}
+
+section article a{
+    border: 1px solid rgb(248, 187, 96);
+    border-radius: 10px;
+    background: rgba(243, 186, 79, 0.171);
+    padding: 10px;
+}
+
+section article a:hover{
+    border: 1px solid blue;
+    border-radius: 10px;
+    background: rgba(0, 0, 255, 0.171);
+    padding: 10px;
+}
+
+.articulo {
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    
+    display: flex;
+}
+
+#titulo-articulo{
+    width: 100%;   
+}
+
+#imagen-articulo{
+    border: 1px solid red;
+    width: 50%;
+    margin: 5px;
+
+}
+
+#descripcion-articulo{
+    width: 40%;
+    border: 2px solid salmon;
+    padding: 10px;
+    margin: 5px;
+    order: 1;
+}
+
+#lista-noticias{
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;   
+    display: flex;
+}
+
+.articulo-noticia{
+    justify-content: flex-end;
+    position: relative;
+}
+
+#imagen-noticia{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    left: 30px;
+}
+#texto-noticia{
+    margin-right: 150px;
+    position: absolute;
+    left: 120px;
+}
+
+input, textarea{
+    margin: 5px;
+}
+
+.contenedor-medios{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.titulo-iconos{   
+    width: 100%;
+}
+
+.imagen-redes{
+    width: 50%;       
+}
+
+.icono{
+    width: 50px;
+}
+
+.formulario{
+    flex-direction: column;
+    text-align: left;
+}
+

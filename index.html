@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--LMSGI02 Tarea Evaluación 2. Iñigo Labat Marco 02/12/2022-->
+<!--En esta tarea crearemos un sitio web sobre el tema elegido en la tarea anterior, siguiendo el boceto presentado-->
+<!--Este es el primer archivo html del sitio web y mostrará la página principal-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="sitio web" content="zapatillas">
+        <title>Athletics shoes</title>
+        <!--Enlazamos la hoja de estilos css para pormatear el sitio web-->
+        <link rel="stylesheet" type="text/css" href="styles/estilos.css">
+
+    </head>
+
+    <body>
+        <!--Utilizaremos etiquetas semánticas para que sean más fácil de visualizar los apartados-->
+        <!--Lo primero, crearemos un header que se repetirá en los demás ficheros, como título del sitio web-->
+        <header class="header">
+            <h1>BUSCADOR DE ZAPATILLAS</h1>
+        </header>
+
+        <!--Añadimos una zona de navegación para movernos por las diferentes páginas del sitio web-->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="contacto.html">Contacto</a> 
+        </nav>
+
+        <!--Incluimos una etiqueta main donde escibiremos la parte principal de este primer fichero-->
+        <main>
+            <img class="imagen-index" src="images/index.webp" alt="imagen">
+            <section class="alinear"> 
+                <p>Sitio web especializado en zapatillas para todas las disciplinas del atletismo. </p>
+                <p>Tanto si acabas de iniciarte en nuestro deporte, como si eres profesional del sector, seguro que aquí encontrarás todo lo que necesitas saber sobre tus nuevas zapatillas.</p>
+                <p>Además, ahora disponemos de adesoramiento personalizado. ¡Ponte en contacto con nosotros!</p>
+            </section>
+            <!--Añadimos un aside, para poder movernos directamente a alguna de las categorías especificadas-->
+            <aside>
+                <h4>Categorías</h4>
+                <a href="listado.html">Velocidad</a>
+                <p>Saltos</p>
+                <p>Lanzamientos</p> 
+            </aside>            
+        </main>
+
+        <!--Para finalizar, añadimos un footer que se repite en todas las páginas-->
+        <footer>
+            <p>Iñigo Labat Marco | Desarrollo de Aplicaciones Web</p>
+        </footer>
+
+    </body>
+
+</html>
